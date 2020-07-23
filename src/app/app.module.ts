@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ServerComponent} from './server/server.component';
-
+import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { ServersComponent } from './servers/servers.component';
 
@@ -12,7 +12,8 @@ import { ServersComponent } from './servers/servers.component';
     ServersComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

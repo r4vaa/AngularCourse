@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ValueConverter } from '@angular/compiler/src/render3/view/template';
+
 
 @Component({
   selector: 'app-servers',
@@ -10,7 +10,7 @@ export class ServersComponent implements OnInit {
 
   allowNewServer= false;
   serverCreationStauts='No Server Creatd';
-  serverName='';
+  serverName='TestServer';
 
 
   constructor() {
