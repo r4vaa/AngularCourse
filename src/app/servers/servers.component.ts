@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ValueConverter } from '@angular/compiler/src/render3/view/template';
 
 @Component({
   selector: 'app-servers',
@@ -9,6 +10,7 @@ export class ServersComponent implements OnInit {
 
   allowNewServer= false;
   serverCreationStauts='No Server Creatd';
+  serverName='';
 
 
   constructor() {
@@ -20,5 +22,8 @@ export class ServersComponent implements OnInit {
   }
   onCreateServer(){
     this.serverCreationStauts='New Server Creatd';
+  }
+  onUpdateServer(event:Event){
+    this.serverName =(<HTMLInputElement>event.target).value;
   }
 }
